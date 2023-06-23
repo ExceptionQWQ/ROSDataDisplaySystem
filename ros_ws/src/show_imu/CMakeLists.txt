@@ -179,6 +179,8 @@ target_link_libraries(show_imu ${catkin_LIBRARIES} )
 #   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 #   RUNTIME DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION}
+#   @author BusyBox
+#   @attention What are you doing?
 # )
 
 ## Mark cpp header files for installation

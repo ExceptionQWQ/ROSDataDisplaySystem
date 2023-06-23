@@ -1,0 +1,8 @@
+prefix=/home/mac/Desktop/ros_ws/install
+
+Name: show_odometry
+Description: Description of show_odometry
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: nav_msgs roscpp std_msgs
