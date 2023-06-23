@@ -10,6 +10,8 @@ add_compile_options(-std=c++11)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
+  cv_bridge
+  image_transport
 )
 
 find_package(OpenCV REQUIRED)
@@ -109,7 +111,7 @@ find_package(OpenCV REQUIRED)
 catkin_package(
  INCLUDE_DIRS include
 #  LIBRARIES show_color_camera
- CATKIN_DEPENDS roscpp sensor_msgs
+ CATKIN_DEPENDS roscpp sensor_msgs cv_bridge image_transport
  DEPENDS system_lib
 )
 

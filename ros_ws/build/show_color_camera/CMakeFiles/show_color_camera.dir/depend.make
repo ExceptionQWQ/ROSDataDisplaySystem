@@ -3,6 +3,16 @@
 
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /home/mac/Desktop/ros_ws/src/show_color_camera/src/main.cpp
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /home/mac/Desktop/ros_ws/src/show_color_camera/src/main.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/cv_bridge/cv_bridge.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/camera_publisher.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/camera_subscriber.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/exception.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/image_transport.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/loader_fwds.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/publisher.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/single_subscriber_publisher.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/subscriber.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/image_transport/transport_hints.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -21,6 +31,7 @@ show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melo
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/message.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/message_event.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/message_forward.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/message_operations.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/message_traits.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/names.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/node_handle.h
@@ -58,6 +69,12 @@ show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melo
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/sensor_msgs/CameraInfo.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/sensor_msgs/CompressedImage.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/sensor_msgs/Image.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/sensor_msgs/RegionOfInterest.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/sensor_msgs/image_encodings.h
+show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 show_color_camera/CMakeFiles/show_color_camera.dir/src/main.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
 

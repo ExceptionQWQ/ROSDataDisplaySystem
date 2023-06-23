@@ -5,4 +5,4 @@ Description: Description of show_color_camera
 Version: 0.0.0
 Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
-Requires: roscpp sensor_msgs
+Requires: roscpp sensor_msgs cv_bridge image_transport
