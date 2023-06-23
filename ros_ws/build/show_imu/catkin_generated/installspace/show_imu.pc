@@ -1,0 +1,8 @@
+prefix=/home/mac/Desktop/ros_ws/install
+
+Name: show_imu
+Description: Description of show_imu
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: nav_msgs roscpp sensor_msgs std_msgs
