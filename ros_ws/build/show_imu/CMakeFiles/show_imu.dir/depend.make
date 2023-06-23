@@ -3,14 +3,8 @@
 
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /home/mac/Desktop/ros_ws/src/show_imu/src/main.cpp
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /home/mac/Desktop/ros_ws/src/show_imu/src/main.h
-show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/geometry_msgs/Point.h
-show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/geometry_msgs/Pose.h
-show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/geometry_msgs/PoseWithCovariance.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/geometry_msgs/Quaternion.h
-show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/geometry_msgs/Twist.h
-show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/geometry_msgs/TwistWithCovariance.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/geometry_msgs/Vector3.h
-show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/nav_msgs/Odometry.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_options.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/advertise_service_options.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/assert.h
@@ -67,6 +61,7 @@ show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/ty
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/wall_timer.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/ros/wall_timer_options.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/rosconsole/macros_generated.h
+show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/sensor_msgs/Imu.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/std_msgs/Header.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcDecl.h
 show_imu/CMakeFiles/show_imu.dir/src/main.cpp.o: /opt/ros/melodic/include/xmlrpcpp/XmlRpcValue.h
