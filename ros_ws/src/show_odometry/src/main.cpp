@@ -46,7 +46,7 @@ void callback(const nav_msgs::Odometry::ConstPtr& ptr)
 
 int main(int argc, char** argv)
 {
-    ros::init(argc, argv, "show_imu");
+    ros::init(argc, argv, "show_odometry");
     ros::NodeHandle nodeHandle;
     ros::Subscriber subscriber = nodeHandle.subscribe("/odom", 1000, callback);
     ros::spin();

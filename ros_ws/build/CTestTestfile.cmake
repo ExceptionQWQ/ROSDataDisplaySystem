@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("show_odometry")
+subdirs("show_color_camera")
 subdirs("show_imu")

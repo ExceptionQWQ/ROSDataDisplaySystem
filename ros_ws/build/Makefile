@@ -710,21 +710,8 @@ sensor_msgs_generate_messages_eus: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f show_imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make show_imu/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	$(MAKE) -f show_color_camera/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make show_color_camera/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f show_imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make show_imu/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named sensor_msgs_generate_messages_nodejs
@@ -736,8 +723,60 @@ sensor_msgs_generate_messages_nodejs: cmake_check_build_system
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f show_imu/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make show_imu/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f show_color_camera/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make show_color_camera/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f show_color_camera/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make show_color_camera/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f show_color_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make show_color_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f show_color_camera/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make show_color_camera/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named show_color_camera
+
+# Build rule for target.
+show_color_camera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 show_color_camera
+.PHONY : show_color_camera
+
+# fast build rule for target.
+show_color_camera/fast:
+	$(MAKE) -f show_color_camera/CMakeFiles/show_color_camera.dir/build.make show_color_camera/CMakeFiles/show_color_camera.dir/build
+.PHONY : show_color_camera/fast
 
 #=============================================================================
 # Target rules for targets named show_imu
@@ -751,32 +790,6 @@ show_imu: cmake_check_build_system
 show_imu/fast:
 	$(MAKE) -f show_imu/CMakeFiles/show_imu.dir/build.make show_imu/CMakeFiles/show_imu.dir/build
 .PHONY : show_imu/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f show_imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make show_imu/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f show_imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make show_imu/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
 
 # Help Target
 help:
@@ -833,11 +846,12 @@ help:
 	@echo "... show_odometry"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
-	@echo "... show_imu"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... show_color_camera"
+	@echo "... show_imu"
 .PHONY : help
 
 
