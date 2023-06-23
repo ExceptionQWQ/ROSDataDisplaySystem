@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/mac/Desktop/ros_ws/build/gtest/cmake_install.cmake")
   include("/home/mac/Desktop/ros_ws/build/show_odometry/cmake_install.cmake")
   include("/home/mac/Desktop/ros_ws/build/show_color_camera/cmake_install.cmake")
+  include("/home/mac/Desktop/ros_ws/build/show_depth_camera/cmake_install.cmake")
   include("/home/mac/Desktop/ros_ws/build/show_imu/cmake_install.cmake")
 
 endif()

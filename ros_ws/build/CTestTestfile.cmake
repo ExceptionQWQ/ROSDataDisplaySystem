@@ -7,4 +7,5 @@
 subdirs("gtest")
 subdirs("show_odometry")
 subdirs("show_color_camera")
+subdirs("show_depth_camera")
 subdirs("show_imu")

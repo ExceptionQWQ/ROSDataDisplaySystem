@@ -779,6 +779,19 @@ show_color_camera/fast:
 .PHONY : show_color_camera/fast
 
 #=============================================================================
+# Target rules for targets named show_depth_camera
+
+# Build rule for target.
+show_depth_camera: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 show_depth_camera
+.PHONY : show_depth_camera
+
+# fast build rule for target.
+show_depth_camera/fast:
+	$(MAKE) -f show_depth_camera/CMakeFiles/show_depth_camera.dir/build.make show_depth_camera/CMakeFiles/show_depth_camera.dir/build
+.PHONY : show_depth_camera/fast
+
+#=============================================================================
 # Target rules for targets named show_imu
 
 # Build rule for target.
@@ -851,6 +864,7 @@ help:
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... show_color_camera"
+	@echo "... show_depth_camera"
 	@echo "... show_imu"
 .PHONY : help
 

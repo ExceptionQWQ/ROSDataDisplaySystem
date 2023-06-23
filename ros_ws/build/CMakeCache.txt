@@ -430,6 +430,12 @@ show_color_camera_BINARY_DIR:STATIC=/home/mac/Desktop/ros_ws/build/show_color_ca
 show_color_camera_SOURCE_DIR:STATIC=/home/mac/Desktop/ros_ws/src/show_color_camera
 
 //Value Computed by CMake
+show_depth_camera_BINARY_DIR:STATIC=/home/mac/Desktop/ros_ws/build/show_depth_camera
+
+//Value Computed by CMake
+show_depth_camera_SOURCE_DIR:STATIC=/home/mac/Desktop/ros_ws/src/show_depth_camera
+
+//Value Computed by CMake
 show_imu_BINARY_DIR:STATIC=/home/mac/Desktop/ros_ws/build/show_imu
 
 //Value Computed by CMake
@@ -557,7 +563,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
