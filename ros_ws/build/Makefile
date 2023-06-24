@@ -804,6 +804,19 @@ show_imu/fast:
 	$(MAKE) -f show_imu/CMakeFiles/show_imu.dir/build.make show_imu/CMakeFiles/show_imu.dir/build
 .PHONY : show_imu/fast
 
+#=============================================================================
+# Target rules for targets named show_point_cloud
+
+# Build rule for target.
+show_point_cloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 show_point_cloud
+.PHONY : show_point_cloud
+
+# fast build rule for target.
+show_point_cloud/fast:
+	$(MAKE) -f show_point_cloud/CMakeFiles/show_point_cloud.dir/build.make show_point_cloud/CMakeFiles/show_point_cloud.dir/build
+.PHONY : show_point_cloud/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -866,6 +879,7 @@ help:
 	@echo "... show_color_camera"
 	@echo "... show_depth_camera"
 	@echo "... show_imu"
+	@echo "... show_point_cloud"
 .PHONY : help
 
 

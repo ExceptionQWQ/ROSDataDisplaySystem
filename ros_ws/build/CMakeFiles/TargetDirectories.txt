@@ -103,3 +103,11 @@
 /home/mac/Desktop/ros_ws/build/show_imu/CMakeFiles/install.dir
 /home/mac/Desktop/ros_ws/build/show_imu/CMakeFiles/edit_cache.dir
 /home/mac/Desktop/ros_ws/build/show_imu/CMakeFiles/rebuild_cache.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/install/strip.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/install/local.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/test.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/list_install_components.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/show_point_cloud.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/edit_cache.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/rebuild_cache.dir
+/home/mac/Desktop/ros_ws/build/show_point_cloud/CMakeFiles/install.dir

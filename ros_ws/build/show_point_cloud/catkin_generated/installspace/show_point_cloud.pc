@@ -1,0 +1,8 @@
+prefix=/home/mac/Desktop/ros_ws/install
+
+Name: show_point_cloud
+Description: Description of show_point_cloud
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp sensor_msgs

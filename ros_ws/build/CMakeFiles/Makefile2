@@ -1813,6 +1813,61 @@ clean: show_imu/CMakeFiles/show_imu.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory show_point_cloud
+
+# Convenience name for "all" pass in the directory.
+show_point_cloud/all: show_point_cloud/CMakeFiles/show_point_cloud.dir/all
+
+.PHONY : show_point_cloud/all
+
+# Convenience name for "clean" pass in the directory.
+show_point_cloud/clean: show_point_cloud/CMakeFiles/show_point_cloud.dir/clean
+
+.PHONY : show_point_cloud/clean
+
+# Convenience name for "preinstall" pass in the directory.
+show_point_cloud/preinstall:
+
+.PHONY : show_point_cloud/preinstall
+
+#=============================================================================
+# Target rules for target show_point_cloud/CMakeFiles/show_point_cloud.dir
+
+# All Build rule for target.
+show_point_cloud/CMakeFiles/show_point_cloud.dir/all:
+	$(MAKE) -f show_point_cloud/CMakeFiles/show_point_cloud.dir/build.make show_point_cloud/CMakeFiles/show_point_cloud.dir/depend
+	$(MAKE) -f show_point_cloud/CMakeFiles/show_point_cloud.dir/build.make show_point_cloud/CMakeFiles/show_point_cloud.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mac/Desktop/ros_ws/build/CMakeFiles --progress-num=20,21 "Built target show_point_cloud"
+.PHONY : show_point_cloud/CMakeFiles/show_point_cloud.dir/all
+
+# Include target in all.
+all: show_point_cloud/CMakeFiles/show_point_cloud.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+show_point_cloud/CMakeFiles/show_point_cloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mac/Desktop/ros_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 show_point_cloud/CMakeFiles/show_point_cloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mac/Desktop/ros_ws/build/CMakeFiles 0
+.PHONY : show_point_cloud/CMakeFiles/show_point_cloud.dir/rule
+
+# Convenience name for target.
+show_point_cloud: show_point_cloud/CMakeFiles/show_point_cloud.dir/rule
+
+.PHONY : show_point_cloud
+
+# clean rule for target.
+show_point_cloud/CMakeFiles/show_point_cloud.dir/clean:
+	$(MAKE) -f show_point_cloud/CMakeFiles/show_point_cloud.dir/build.make show_point_cloud/CMakeFiles/show_point_cloud.dir/clean
+.PHONY : show_point_cloud/CMakeFiles/show_point_cloud.dir/clean
+
+# clean rule for target.
+clean: show_point_cloud/CMakeFiles/show_point_cloud.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
