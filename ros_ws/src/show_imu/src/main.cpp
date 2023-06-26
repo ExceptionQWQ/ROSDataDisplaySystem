@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 void callback(const sensor_msgs::Imu::ConstPtr& ptr)
 {
     std::cout << "std_msgs/Header header" << std::endl;

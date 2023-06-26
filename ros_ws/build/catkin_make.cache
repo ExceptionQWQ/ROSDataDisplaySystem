@@ -1,2 +1,2 @@
-show_color_camera:show_depth_camera:show_imu:show_odometry:show_point_cloud
+show_color_camera:show_depth_camera:show_imu:show_map:show_odometry:show_point_cloud
 -DCATKIN_DEVEL_PREFIX=/home/mac/Desktop/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mac/Desktop/ros_ws/install -G Unix Makefiles

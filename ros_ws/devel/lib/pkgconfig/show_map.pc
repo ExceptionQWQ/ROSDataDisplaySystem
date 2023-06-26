@@ -1,0 +1,8 @@
+prefix=/home/mac/Desktop/ros_ws/devel
+
+Name: show_map
+Description: Description of show_map
+Version: 0.0.0
+Cflags: -I/home/mac/Desktop/ros_ws/src/show_map/include
+Libs: -L${prefix}/lib 
+Requires: nav_msgs roscpp std_msgs

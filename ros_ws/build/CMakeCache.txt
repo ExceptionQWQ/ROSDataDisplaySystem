@@ -796,6 +796,12 @@ show_imu_BINARY_DIR:STATIC=/home/mac/Desktop/ros_ws/build/show_imu
 show_imu_SOURCE_DIR:STATIC=/home/mac/Desktop/ros_ws/src/show_imu
 
 //Value Computed by CMake
+show_map_BINARY_DIR:STATIC=/home/mac/Desktop/ros_ws/build/show_map
+
+//Value Computed by CMake
+show_map_SOURCE_DIR:STATIC=/home/mac/Desktop/ros_ws/src/show_map
+
+//Value Computed by CMake
 show_odometry_BINARY_DIR:STATIC=/home/mac/Desktop/ros_ws/build/show_odometry
 
 //Value Computed by CMake
@@ -965,7 +971,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
