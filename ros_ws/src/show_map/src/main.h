@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <cstring>
+#include <thread>
 #include <opencv2/opencv.hpp>
 #include "ros/ros.h"
 #include "nav_msgs/OccupancyGrid.h"

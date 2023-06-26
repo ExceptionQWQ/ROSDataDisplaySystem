@@ -26,8 +26,14 @@ void callback(const nav_msgs::OccupancyGrid::ConstPtr& ptr)
     return ;
 }
 
+void LaunchGMapping()
+{
+    system("rosrun gmapping slam_gmapping");
+}
+
 int main(int argc, char** argv)
 {
+    std::thread gm(LaunchGMapping);
     ros::init(argc, argv, "show_map");
     ros::NodeHandle nodeHandle;
     ros::Subscriber subscriber = nodeHandle.subscribe("/map", 1000, callback);

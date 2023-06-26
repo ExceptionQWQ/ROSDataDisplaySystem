@@ -15,6 +15,8 @@ iostream
 -
 cstring
 -
+thread
+-
 opencv2/opencv.hpp
 -
 ros/ros.h
