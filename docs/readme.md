@@ -183,24 +183,81 @@
 >    >    * 运行show_depth_camera
 >    >    ![Alt text](image-12.png)
 ## ***三，用图形界面显示激光雷达的点云数据（利用PCL库）***
->    1. **安装PCL库**
->    >    ```bash
->    >    mac@ubuntu:~$ sudo apt-get update
->    >    mac@ubuntu:~$ sudo apt-get upgrade
->    >    mac@ubuntu:~$ sudo apt-get install libpcl-dev
->    >    ```
->    >    * 查看话题消息的类型
->    >    ![Alt text](image-13.png)
->    >    * 将ROS消息转换成点云显示出来
->    >    >    ```c++
->    >    >    void callback(const sensor_msgs::PointCloud2::ConstPtr& msg)
->    >    >    {
->    >    >        pcl::PointCloud<pcl::PointXYZ> cloud;
->    >    >        pcl::PCLPointCloud2 pcl_pc;
->    >    >        pcl_conversions::toPCL(*msg, pcl_pc);
->    >    >        pcl::fromPCLPointCloud2(pcl_pc, cloud);
->    >    >        viewer.showCloud(cloud.makeShared());
->    >    >    }
->    >    >    ```
->    >    * 运行show_point_cloud
->    >    ![Alt text](image-14.png)
+>    * 安装PCL库
+>    ```bash
+>    mac@ubuntu:~$ sudo apt-get update
+>    mac@ubuntu:~$ sudo apt-get upgrade
+>    mac@ubuntu:~$ sudo apt-get install libpcl-dev
+>    ```
+>    * 查看话题消息的类型
+>    ![Alt text](image-13.png)
+>    * 将ROS消息转换成点云显示出来
+>    ```c++
+>    void callback(const sensor_msgs::PointCloud2::ConstPtr& msg)
+>    {
+>        pcl::PointCloud<pcl::PointXYZ> cloud;
+>        pcl::PCLPointCloud2 pcl_pc;
+>        pcl_conversions::toPCL(*msg, pcl_pc);
+>        pcl::fromPCLPointCloud2(pcl_pc, cloud);
+>        viewer.showCloud(cloud.makeShared());
+>    }
+>    ```
+>    * 运行show_point_cloud
+>    ![Alt text](image-14.png)
+## ***四，GMapping建图***
+>    * 安装gmapping
+>    ```bash
+>    mac@ubuntu:~$ sudo apt-get update
+>    mac@ubuntu:~$ sudo apt-get upgrade
+>    mac@ubuntu:~$ sudo apt-get install ros-melodic-gmapping
+>    ```
+>    * 查询nav_msgs/OccupancyGrid.msg消息定义
+>    ```py
+>    # This represents a 2-D grid map, in which each cell represents the probability of
+>    # occupancy.
+>    
+>    Header header 
+>    
+>    #MetaData for the map
+>    MapMetaData info
+>    
+>    # The map data, in row-major order, starting with (0,0).  Occupancy
+>    # probabilities are in the range [0,100].  Unknown is -1.
+>    int8[] data
+>    ```
+>    * 启动gmapping
+>    ```c++
+>    void LaunchGMapping()
+>    {
+>        system("rosrun gmapping slam_gmapping");
+>    } 
+>    ```
+>    * 利用opencv绘制2D地图
+>    ```c++
+>    void callback(const nav_msgs::OccupancyGrid::ConstPtr& ptr)
+>    {   
+>        std::cout << "resolution: " << ptr->info.resolution << std::endl;
+>        std::cout << "width: " << ptr->info.width << std::endl;
+>        std::cout << "height: " << ptr->info.height << std::endl;
+>        double scale = 1.0;
+>        int width = 1200;
+>        int height = 1200;
+>        cv::Point offset = {-1600, -1600};
+>        cv::Mat map = cv::Mat::zeros(cv::Size(width, height), CV_8UC3);
+>        for (int i = 0; i < ptr->info.width * ptr->info.height; ++i) {
+>            int x = (i % ptr->info.width + offset.x) * scale, y = (i / ptr->info.width + offset.y) * scale;
+>            if (ptr->data[i] == -1) {
+>                cv::circle(map, cv::Point(x, y), 1, cv::Scalar(255, 255, 255), -1);
+>            } else if (ptr->data[i] >= 80) {
+>                cv::circle(map, cv::Point(x, y), 3, cv::Scalar(0, 0, 0), -1);
+>            } else {
+>                cv::circle(map, cv::Point(x, y), 3, cv::Scalar(0, 255, 0), -1);
+>            }    
+>        }
+>        cv::imshow("map", map);
+>        cv::waitKey(1000);
+>        return ;
+>    }
+>    ```
+>    * 建图结果
+>    ![Alt text](image-15.png)
